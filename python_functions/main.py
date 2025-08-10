@@ -1,4 +1,4 @@
-# generate_completion.py
+# main.py – Firebase callable functions
 
 from firebase_functions import https_fn
 from firebase_admin import initialize_app, firestore
