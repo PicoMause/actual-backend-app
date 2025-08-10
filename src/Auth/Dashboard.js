@@ -149,7 +149,7 @@ const Dashboard = () => {
           unsubscribePrompts();
         };
       } else {
-        navigate('/login'); // Redirect to login if not authenticated
+        navigate('/signup'); // Redirect to signup if not authenticated
       }
     });
 
@@ -159,7 +159,7 @@ const Dashboard = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      navigate('/login'); // Redirect to login after logout
+      navigate('/signup'); // Redirect to signup after logout
     } catch (err) {
       console.error('Error signing out:', err);
       setError('Failed to log out.');
